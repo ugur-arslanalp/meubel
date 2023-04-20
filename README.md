@@ -1,7 +1,7 @@
 
 ## Furniture shop page
 
-This is a [Next.js](https://nextjs.org/) furniture-shop website was built as graduation project. It shows all benefits of creating websites using Next.js framework
+This is a  furniture-shop website was built as graduation project. It shows all benefits of creating websites using React framework
 
 ### Technologies stack
 * React
