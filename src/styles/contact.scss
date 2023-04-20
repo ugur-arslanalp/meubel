@@ -1,0 +1,110 @@
+.section__container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding: 0 clamp(20px, 18vw, 18vw);
+
+  .info__section {
+    text-align: center;
+    padding: 0 clamp(20px, 10vw, 10vw);
+    margin-bottom: 100px;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #9f9f9f;
+    }
+  }
+
+  .contact__info__submit {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(20px, 18vw, 18vw);
+
+    .contact__info {
+      flex: 1 1 auto;
+
+      p {
+        margin-left: 48px;
+        font-size: 20px;
+      }
+
+      &-item {
+        margin-bottom: 40px;
+
+        .item {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 25px;
+          }
+
+          span {
+            font-size: 30px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .input__section {
+      flex: 2 1 auto;
+
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      input {
+        height: 70px;
+        width: clamp(250px, 30vw, 30vw);
+        border: 1px solid #9f9f9f;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        padding-left: 20px;
+        font-weight: 400;
+        color: #9f9f9f;
+        font-family: "Poppins", sans-serif;
+      }
+
+      textarea {
+        resize: none;
+        border: 1px solid #9f9f9f;
+        border-radius: 10px;
+        width: clamp(250px, 30vw, 30vw);
+        height: 120px;
+        font-size: 16px;
+        padding-left: 20px;
+        font-weight: 400;
+        color: #9f9f9f;
+        font-family: "Poppins", sans-serif;
+        padding-top: 20px;
+        display: block;
+        margin-bottom: 40px;
+      }
+
+      button {
+        background: white;
+        padding: 12px 70px;
+        border: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact__info__submit {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,104 @@
+.account__section {
+  padding: 50px clamp(20px, 7.5vw, 7.5vw);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & > * {
+    flex: 1 1 0px;
+    padding: 0 clamp(20px, 7.5vw, 7.5vw);
+  }
+
+  .login {
+    .checkbox__div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      margin-top: 15px;
+
+      input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+        border: 1px solid #9f9f9f;
+        border-radius: 10%;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .register {
+    .mail__info {
+      margin-bottom: 70px;
+
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  button {
+    background: white;
+    border: 0.8px solid rgb(56, 56, 56);
+    padding: 16px 65px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    height: 60px;
+    width: clamp(200px, 23vw, 23vw);
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 400;
+    color: #696969;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .account__section {
+    text-align: center;
+    gap: 50px;
+
+    .login {
+      .checkbox__div {
+        justify-content: center;
+      }
+    }
+    .register {
+      justify-content: center;
+      text-align: center;
+    }
+    .register__button {
+      margin-right: 0;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: clamp(200px, 40vw, 40vw);
+    }
+  }
+}

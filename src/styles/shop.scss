@@ -1,0 +1,117 @@
+.filter__section {
+  background: #faf4f4;
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    img {
+      margin-right: 30px;
+    }
+
+    span {
+      margin-right: 30px;
+      font-size: 22px;
+    }
+
+    .border-right {
+      padding-right: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-right: 2px solid #9f9f9f;
+    }
+  }
+
+  .sort-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    span {
+      font-size: 22px;
+      margin-right: 20px;
+    }
+
+    .page__size {
+      background: white;
+      display: inline-block;
+      height: 70px;
+      width: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9f9f9f;
+      margin-right: 40px;
+    }
+
+    .sort__selection {
+      background: white;
+      display: inline-block;
+      height: 70px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 30px;
+      color: #9f9f9f;
+    }
+  }
+}
+
+.products__section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 100px;
+  row-gap: 60px;
+  margin-bottom: 50px;
+
+  & > * {
+    flex: 1 0 21%;
+  }
+
+  .pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin: 10px;
+      padding: 20px 28px;
+      background: #fff9e5;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 30px;
+    }
+  }
+}
+
+.active__page{
+    background: #FBEBB5 !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .filter__section{
+    justify-content: center;
+
+    .icons{
+      justify-content: center;
+    }
+  }
+
+  .products__section{
+    justify-content: center;
+  }
+}

@@ -1,0 +1,24 @@
+.hamburger__navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 10px 20px;
+    max-width: 250px;
+    z-index: 100;
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hamburger__nav__icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.close__icon{
+    position: absolute;
+    top: 3%;
+    right: 2%;
+}

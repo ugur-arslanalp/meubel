@@ -1,0 +1,72 @@
+.footer {
+  padding: 50px clamp(20px, 7.5vw, 7.5vw);
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #F5F5F5;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+
+  &__adress p {
+    color: #9f9f9f;
+  }
+
+  span {
+    color: #9f9f9f;
+  }
+
+  ul {
+    margin-top: 40px;
+  }
+
+  &__links {
+    li {
+      margin-top: 40px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__help {
+    align-self: flex-start;
+
+    li {
+      margin-top: 40px;
+      font-weight: 500;
+
+      button{
+        all: unset;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__newsletter {
+    align-self: flex-start;
+
+    .subscribe {
+      margin-top: 37px;
+    }
+    input {
+      border: none;
+      outline: 0;
+      background: transparent;
+      border-bottom: 1px solid black;
+      font-family: "Poppins", sans-serif;
+      margin-right: 20px;
+    }
+
+    button {
+      border: none;
+      background: #fff;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      border-bottom: 1px solid black;
+      cursor: pointer;
+    }
+  }
+}

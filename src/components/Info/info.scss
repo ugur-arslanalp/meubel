@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #faf4f4;
+  padding: 100px clamp(20px, 7.5vw, 7.5vw);
+  gap: clamp(20px, 5vw, 5vw);
+
+  h4 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 20px;
+    color: #9f9f9f;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .container{
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    padding: 100px 50px;
+  }
+  
+}

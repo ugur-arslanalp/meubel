@@ -1,0 +1,120 @@
+.opac__layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .cart__wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+
+    .cart__content {
+      height: 100%;
+      background: white;
+      position: relative;
+      z-index: 1;
+      flex-direction: column;
+      transform: translateX(100%);
+      animation: slideCartPopup 0.3s ease forwards;
+      padding: 20px 20px;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 20px;
+
+        span {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+      .cart__content__container {
+        margin-bottom: 150px;
+
+        .cart__items {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+
+          .item__image {
+            background: #fbebb5;
+            width: 150px;
+            border-radius: 5px;
+            margin-right: 20px;
+          }
+
+          .item__name__amount__container {
+            margin-right: 20px;
+
+            p {
+              font-weight: 500;
+              margin-bottom: 10px;
+            }
+
+            span {
+              margin-right: 40px;
+            }
+
+            span:last-child {
+              color: #b88e2f;
+            }
+          }
+        }
+      }
+
+      .subtotal {
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+
+        span {
+          font-size: 20px;
+          font-weight: 500;
+          margin-right: 100px;
+        }
+
+        span:last-child {
+          color: #b88e2f;
+        }
+      }
+
+      .popup__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        button {
+          padding: 10px 30px;
+          border: 1px solid black;
+          background: inherit;
+          border-radius: 50px;
+          font-size: 15px;
+          font-family: 500;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideCartPopup {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
